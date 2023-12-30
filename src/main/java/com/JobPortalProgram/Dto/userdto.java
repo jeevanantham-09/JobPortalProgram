@@ -6,7 +6,9 @@ public class userdto {
     public String email;
     public String phone;
     public String address;
-    public String Education;
+    public String Qualification;
+    public String passedOutYear;
+
     public String preferred_role;
     public String preferred_salary;
     public String job_type;
@@ -15,13 +17,14 @@ public class userdto {
     public String  projects;
     public String languages;
 
-    public userdto(String username, String dob, String email, String phone, String address, String education, String preferred_role, String preferred_salary, String job_type, String skills, String profile_summary, String projects, String languages) {
+    public userdto(String username, String dob, String email, String phone, String address, String qualification, String passedOutYear, String preferred_role, String preferred_salary, String job_type, String skills, String profile_summary, String projects, String languages) {
         this.username = username;
         this.dob = dob;
         this.email = email;
         this.phone = phone;
         this.address = address;
-        this.Education = education;
+        Qualification = qualification;
+        this.passedOutYear = passedOutYear;
         this.preferred_role = preferred_role;
         this.preferred_salary = preferred_salary;
         this.job_type = job_type;
@@ -71,12 +74,20 @@ public class userdto {
         this.address = address;
     }
 
-    public String getEducation() {
-        return Education;
+    public String getQualification() {
+        return Qualification;
     }
 
-    public void setEducation(String education) {
-        Education = education;
+    public void setQualification(String qualification) {
+        Qualification = qualification;
+    }
+
+    public String getPassedOutYear() {
+        return passedOutYear;
+    }
+
+    public void setPassedOutYear(String passedOutYear) {
+        this.passedOutYear = passedOutYear;
     }
 
     public String getPreferred_role() {

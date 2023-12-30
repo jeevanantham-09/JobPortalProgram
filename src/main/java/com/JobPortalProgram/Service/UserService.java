@@ -7,8 +7,5 @@ import com.JobPortalProgram.UserModel.User;
 import java.util.List;
 
 public interface UserService {
-
-
-
     User save(userdto userdto);
 }

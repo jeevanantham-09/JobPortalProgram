@@ -14,7 +14,7 @@ public class UserServiceImp implements UserService{
     private UserRepo userRepo;
     @Override
     public User save(userdto userdto) {
-        User user = new User( userdto.getUsername(), userdto.getDob(), userdto.getEmail(), userdto.getPhone(),  userdto.getAddress(), userdto.getEducation(), userdto.getPreferred_role(), userdto.getPreferred_salary(), userdto.getJob_type(), userdto.getSkills(), userdto.getProfile_summary(), userdto.getProjects(), userdto.getLanguages());
+        User user = new User(userdto.getUsername(), userdto.getDob(), userdto.getEmail(), userdto.getPhone(),  userdto.getAddress(), userdto.getQualification(), userdto.getPassedOutYear(), userdto.getPreferred_role(), userdto.getPreferred_salary(), userdto.getJob_type(), userdto.getSkills(), userdto.getProfile_summary(), userdto.getProjects(), userdto.getLanguages());
         return userRepo.save(user);
     }
 public List<User> getUsers(){
